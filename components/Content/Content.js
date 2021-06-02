@@ -17,16 +17,26 @@ const H1 = styled.h1`
   width: 100%;
   margin: 5px;
 `
-const P = styled.p`
+const Ol = styled.ol`
   padding: 3px;
   margin: 2px;
   font-size: 12px;
 `
+const Li = styled.li`
+  padding: 3px;
+  margin: 2px;
+`
 const Content = ({ groupedData }) => {
   const sortedData = Object.entries(groupedData).map((arr) => (
-    <Grid>
+    <Grid key={arr[0]}>
       <H1>Group: {arr[0]}</H1>
-      <P>{arr[1].map((a) => a.name)}</P>
+      <Ol>
+        {arr[1]
+          .filter((filter) => filter.name)
+          .map((item) => (
+            <Li key={item.name}>{item.name}</Li>
+          ))}
+      </Ol>
     </Grid>
   ))
 
