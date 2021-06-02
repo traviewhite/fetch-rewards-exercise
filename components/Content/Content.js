@@ -33,6 +33,17 @@ const Content = ({ groupedData }) => {
       <Ol>
         {arr[1]
           .filter((filter) => filter.name)
+          .sort((a, b) => {
+            let nameA = a.id
+            let nameB = b.id
+            if (nameA < nameB) {
+              return -1
+            }
+            if (nameA > nameB) {
+              return 1
+            }
+            return 0
+          })
           .map((item) => (
             <Li key={item.name}>{item.name}</Li>
           ))}
