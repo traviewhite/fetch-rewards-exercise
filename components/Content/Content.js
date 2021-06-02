@@ -8,7 +8,6 @@ const ContentContainer = styled.div`
 const Grid = styled.div`
   flex: 1 1 350px;
   margin: 1em;
-  /* padding: 1.5em; */
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #d1d1d1;
@@ -22,13 +21,26 @@ const Ol = styled.ol`
   padding: 0 1em;
   margin: 0.5em 0;
   max-height: 25vh;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   font-size: 1em;
   font-weight: 600;
   list-style-position: inside;
   list-style-type: decimal-leading-zero;
   overflow-y: scroll;
+  scrollbar-color: rebeccapurple;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background: inherit;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #5b196b;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #300d39;
+  }
 `
 const Li = styled.li`
   padding: 3px;
