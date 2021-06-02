@@ -11,13 +11,14 @@ const ContentContainer = styled.div`
 `
 
 const Content = ({ groupedData }) => {
-  const sortedData = Object.entries(groupedData).map((arr) => arr[1].map((item) => item.name))
+  const sortedData = Object.entries(groupedData).map((arr) => (
+    <>
+      <h1>{arr[0]}</h1>
+      <p>{arr[1].map((a) => a.name)}</p>
+    </>
+  ))
 
-  return (
-    <ContentContainer asdfs asdf>
-      {sortedData}
-    </ContentContainer>
-  )
+  return <ContentContainer>{sortedData}</ContentContainer>
 }
 
 export default Content
