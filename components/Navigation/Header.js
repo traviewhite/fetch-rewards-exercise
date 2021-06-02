@@ -20,13 +20,13 @@ const Logo = styled.div`
   cursor: pointer;
 `
 const H4 = styled.h4`
-  color: dimgray;
+  color: #4e4e4e;
   font-style: italic;
   letter-spacing: -0.5px;
   cursor: default;
 `
 const P = styled.p`
-  color: gray;
+  color: #5e5e5e;
   font-weight: 500;
   font-size: 0.9em;
   letter-spacing: -0.5px;
