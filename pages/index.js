@@ -8,9 +8,10 @@ import groupBy from 'lodash/groupBy'
 // Filter out any items where "name" is blank or null.
 
 export default function App({ data }) {
-  console.log(data)
   const groupedData = groupBy(data, 'listId')
-  console.log(groupedData)
+  // console.log(groupedData)
+
+  console.log(Object.entries(groupedData).map((arr) => arr[1].map((item) => item.name)))
 
   return (
     <Layout>
