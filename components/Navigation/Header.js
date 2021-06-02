@@ -17,31 +17,32 @@ const Logo = styled.div`
   position: relative;
   height: 4rem;
   width: 100%;
-  > div {
-  }
+  cursor: pointer;
 `
 const H4 = styled.h4`
   color: dimgray;
-  letter-spacing: -0.5px;
   font-style: italic;
+  letter-spacing: -0.5px;
+  cursor: default;
 `
 const P = styled.p`
   color: gray;
   font-weight: 500;
   font-size: 0.9em;
   letter-spacing: -0.5px;
+  cursor: default;
 `
 const Header = () => (
   <Nav>
-    <Logo>
-      <Link href='/'>
+    <Link href='/'>
+      <Logo>
         <Image
           src='https://sometextsite.wpengine.com/wp-content/uploads/2021/04/DSN-Logo-2-03.svg'
           alt='Fetch Rewards Logo'
           layout='fill'
         />
-      </Link>
-    </Logo>
+      </Logo>
+    </Link>
     <H4>Fetch Rewards Coding Exercise</H4>
     <P>by: Travis White</P>
   </Nav>

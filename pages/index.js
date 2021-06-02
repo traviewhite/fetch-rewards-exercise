@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Layout from '@/components/Layout/Layout'
+import groupBy from 'lodash/groupBy'
 
 // OBJECTIVE
 // Display all the items grouped by "listId"
@@ -8,6 +9,9 @@ import Layout from '@/components/Layout/Layout'
 
 export default function App({ data }) {
   console.log(data)
+  const groupedData = groupBy(data, 'listId')
+  console.log(groupedData)
+
   return (
     <Layout>
       <pre>{JSON.stringify(data, null, 2)}</pre>
