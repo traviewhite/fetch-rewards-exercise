@@ -2,6 +2,18 @@
 
 Coding exercise for Fetch Rewards - Front End Engineer Role.
 
+## Overview
+
+- `pages/*` - Index page and other Next.js files.
+- `components/*` - Collection of components for organizing content, UI, and navigation.
+
+## Built Using
+
+- [Next.js](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Lodash](https://lodash.com/)
+- [Vercel](https://vercel.com)
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import Layout from '@/components/Layout/Layout'
 import Content from '@/components/Content/Content'
 import groupBy from 'lodash/groupBy'
@@ -14,7 +13,6 @@ export default function App({ data }) {
   return (
     <Layout>
       <Content groupedData={groupedData} />
-      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </Layout>
   )
 }
