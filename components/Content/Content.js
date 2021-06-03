@@ -19,7 +19,7 @@ const H1 = styled.h1`
 `
 const Ol = styled.ol`
   padding: 0 1em;
-  margin: 0.5em 0;
+  margin: 0.5em 0.25em;
   max-height: 25vh;
   font-size: 1em;
   font-weight: 600;

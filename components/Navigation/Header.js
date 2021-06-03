@@ -9,7 +9,7 @@ const Nav = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  text-align: center;
   background-color: white;
 `
 const Logo = styled.div`
