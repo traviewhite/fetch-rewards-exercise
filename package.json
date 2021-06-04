@@ -22,5 +22,8 @@
     "singleQuote": true,
     "jsxSingleQuote": true,
     "bracketSpacing": true
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
